@@ -4,6 +4,8 @@
 	margin: 0;
 	padding: 0;
 	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 body{
 	overflow-horizontal: hidden;
@@ -11,13 +13,11 @@ body{
 	display: block;
 	height: 100%;
 	overflow-x: hidden;
-	/*background: #7F8C8D;*/
 }
 header.page3{
 	display: block;
 	width: 100%;
 	color : #27AE60;
-	/*background: #A3B1B2;*/
 	padding: 20px;
 	text-align: center;
 	margin: 0 auto;
@@ -121,7 +121,6 @@ project a {
 	text-align: left;
 }
 #title-img img{
-	/*-webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);*/
 	text-align: left;
 	width: 95px;
 	vertical-align: middle;
@@ -169,6 +168,8 @@ project a {
 	padding: 10px;
 	background:#2ECC71;
 	-webkit-transition:all 0.6s;
+	-moz-transition:all 0.6s;
+	transition:all 0.6s;
 	display: none;
 }
 .project-details a{
@@ -177,6 +178,8 @@ project a {
 	padding-bottom: 2px;
 	border-bottom: 1px dotted;
 	-webkit-transition:all 0.2s;
+	-moz-transition:all 0.2s;
+	transition:all 0.2s;
 }
 .project-details a:hover {
 	padding-bottom: 5px;
