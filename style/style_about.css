@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic|Roboto+Condensed:300italic,400,300|Roboto:300,300italic,100italic,100,400|Roboto+Slab:300,100,400);
+* {
+	border: none;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all 0.3s ease-out;
+}
+body{
+	overflow-horizontal: hidden;
+	min-width: 550px;
+	display: block;
+	height: 100%;
+	overflow-x: hidden;
+	background: #BDC3C7;
+}
+header.page2{
+	display: block;
+	width: 100%;
+	color : #34495E;
+	background: #BDC3C7;
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	z-index: 30;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	padding: 5px;
+	font-size: 18px;
+	border-bottom: 1px solid #BDC3C7;
+	font-family: 'Lato';
+	font-weight: 300;
+	display: inline-block;
+}
+nav ul li:hover{
+	color: #2C3E50;
+	border-bottom-color: #2C3E50;
+}
+nav ul li a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.row{
+	padding: 10px;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+#title-img{
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 50%;
+	padding: 2px;
+	/*border: 1px solid #000;*/
+	overflow: hidden;
+	text-align: left;
+}
+#title-img img{
+	/*-webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);*/
+	text-align: left;
+	width: 95px;
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 50%;
+}
+#title{
+	text-align: right;
+	display: inline-block;
+	margin-left: 20px;
+	vertical-align: middle;
+	font-family: Lato;
+	font-size: 50px;
+	font-weight: bolder;
+	border-bottom: 2px solid #2C3E50;
+}
+#title span {
+    color: #7F8C8D;
+}
+.first-row{
+	padding-top: 30px;
+	text-align: left;
+}
+.my-stuff {
+	width: 70%;
+	margin: 0 auto;
+	font-family: 'Roboto Slab';
+	font-size: 23px;
+	font-weight: 300;
+	text-align: left;
+}
+.mystuff-links{
+	text-decoration: none;
+	color: #2C3E50;
+	-webkit-transition: all 0.5s;
+	border-bottom:2px solid #BDC3C7; 
+}
+.mystuff-links:hover {
+	/*text-decoration: underline;*/
+	border-bottom-color: #2C3E50;
+}
+.hash, .hashtag {
+	line-height: 2px;
+	border-bottom:1px solid #BDC3C7; 
+}
+.hashtag:hover {
+	border-bottom-color: #2C3E50;
+}
+.hashtag {
+	color: #34495E;
+	font-weight: 400;
+}
+.hash {
+	color: #2C3E50;
+	font-weight: 700;
+}
+.hashtag:hover {
+	cursor: pointer;
+}
+.hash:hover {
+	color: #39c;
+}
+.tag {
+	color: #34495E;
+	font-weight: 700;
+}
+.tag-alt {
+	border-bottom: 1px solid #2C3E50;
+	color: #34495E;
+}
+.projects{
+	text-align: center;
+	width: 100%;
+}
+project{
+	text-align: left;
+	display: inline-block;
+	background: #fff;
+	width: 300px;
+	overflow: hidden;
+	margin: 5px;
+}
+project .top{
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 150px;
+}
+project .top img{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	z-index: 5;
+}	
+project .bottom {
+	width: 125%;
+	z-index: 10;
+	margin-left: -5%;
+	box-shadow: 0 0 30px;
+}
+project .bottom .work-stuff {
+	width: 80%;
+	margin: 0 auto;
+	padding: 8px;
+	display: block;
+	font-family: 'Lato';
+	font-weight: 300;
+}
+project .bottom .work-stuff h4 {
+	margin-bottom:4px; 
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Roboto Condensed';
+	color: #2C3E50;
+}
+project .postscript {
+	z-index: 10;
+	display: block;
+	width: 100%;
+	color: #fff;
+	background: red;
+	font-style: 300;
+	padding: 2px 0 3px 10px;
+	font-family: 'Roboto Condensed';
+	font-style: italic;
+}
+project a {
+	color: inherit;
+	text-decoration: none;
+}
+h3 {
+	color: #2C3E50;
+	font-size: 35px;
+	display: inline-block;
+	border-bottom: 2px solid;
+	font-family: 'Roboto Slab'
+}
+.social{
+	text-align: left;
+}
+.social a:hover img {
+	-webkit-filter: saturate(0);
+	filter : saturate(0);
+}
+.social-icons {
+	list-style: none;
+}
+.social-icons li{
+	text-align: left;
+	display: block;
+	vertical-align: middle;
+	width: 300px;
+	margin:10px 0; 
+}
+.social .label {
+	margin-left: 15px;
+	color: #2980B9;
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'Lato';
+	padding-bottom: 2px;
+}
+.social a:hover .label{
+	border-bottom: 1px dotted;
+	-webkit-filter : saturate(0);
+}
+.social li img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+}
+.social a {
+	color: inherit;
+	text-decoration: none;
+}
+.row-social {
+	padding: 40px;
+}

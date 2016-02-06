@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects | Prannay Khosla</title>
+	<link rel="stylesheet" type="text/css" href="style/style_projects.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.project-link').click(function(){
+				var id = $(this).attr('id');
+				$('.project-details').children('div').css('display','none');
+				$('div#'+id).css('display','block');
+			})	
+		})
+	</script>
+</head>
+<body>
+	<header class="page3">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<!-- <li><a href="#">Blog</a></li> -->
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+	</header>
+	<div class="container">
+		<div class="row first-row">
+			<div id="title-img"><img src="images/self.png"></div>
+			<div id="title">Prannay <span>Khosla</span></div>
+		</div>
+		<div class="row projects">
+			<div class="project-container">
+				<project>
+					<div class="top">
+						<img src="images/project1.png">
+					</div>
+					<div class="bottom">
+						<a href="#project1" class="project-link" id="project1">
+							<div class="work-stuff">
+								<h4>Online Judge</h4>
+								<p>Haskell, Backend Optimization</p>
+							</div>
+						</a>
+					</div>
+					<div class="postscript ongoing">Ongoing</div>
+				</project>
+				<project>
+					<div class="top">
+						<img src="images/project1.png">
+					</div>
+					<div class="bottom">
+						<a href="#" class="project-link" id="project2">
+							<div class="work-stuff">
+								<h4>Autonomous Underwater Vehicle</h4>
+								<p>Artificial Intelligence, RobotOS</p>
+							</div>
+						</a>
+					</div>
+					<div class="postscript ongoing">Ongoing</div>
+				</project>
+				<project>
+					<div class="top">
+						<img src="images/project1.png">
+					</div>
+					<div class="bottom">
+						<a href="#" class="project-link" id="project3">
+							<div class="work-stuff">
+								<h4>Connec<sup>4</sup>AI</h4>
+								<p>Artificial Intelligence, Haskell</p>
+							</div>
+						</a>
+					</div>
+					<div class="postscript ongoing">Ongoing</div>
+				</project>
+			</div>
+			<div class="row project-details">
+				<div id="project1">
+					<h3><a id="project1">Online Judge</a></h3>
+					<p>
+						The project is aimed at building the backend of a web based Judge which checks a code for <span class="italic">Correctness</span>, <span class="italic">Run time</span> and <span class="italic">memory</span>. Haskell is the ideal language for this since we can effectively use <span class="italic">Concurrent threads</span> and memory to lazily compute everything. Further this can be deployed using web based frameworks such as Yesod. Here again Haskell is beneficial since it is comparitively faster to program scripts which check for malicious code in Haskell.
+						View the code at <a href="http://github.com/prannayk/conj">Github.com</a>
+					</p>
+				</div>
+				<div id="project2">
+					<h3>Autonomous Underwater Vehicle</h3>
+					<p>
+						The project is aimed at creating an Autonomous Robot which runs underwater. The programming problem can be divided into 3 main sections which are <span class="italic">Controls</span>, <span class="italic">Image Processing</span> and <span class="italic">Aritificial Intelligence algorithms</span>. Presently we use Robot OS' effective message passing, goal callback and effective unit testing techniques to optimize the controls and seperating the logical levels from the actuation levels. Further we use OpenCV for image processing.
+						<br>View the code at <a href="https://github.com/AUV-IITK">Github.com</a>
+					</p>
+				</div>
+				<div id="project3">
+					<h3>Connec<sup>4</sup>AI</h3>
+					<p>The basic idea is to effectively use the laziness of Haskell to easily find the winning strategy in a given game of TicTacToe without overflowing the stacks. The next step would be to implement the same for Connect4 but using probabilistic analysis on the side, as a complement to further optimize the process for larger dimensions. The frontend implementation for the game is still under consideration.</p>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

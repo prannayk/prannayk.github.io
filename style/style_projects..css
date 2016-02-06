@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic|Roboto+Condensed:300italic,400,300|Roboto:300,300italic,100italic,100,400|Roboto+Slab:300,100,400);
+* {
+	border: none;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all 0.3s ease-out;
+}
+body{
+	overflow-horizontal: hidden;
+	min-width: 550px;
+	display: block;
+	height: 100%;
+	overflow-x: hidden;
+	background: #BDC3C7;
+}
+header.page3{
+	display: block;
+	width: 100%;
+	color : #34495E;
+	background: #BDC3C7;
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	z-index: 30;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	padding: 5px;
+	font-size: 18px;
+	border-bottom: 1px solid #BDC3C7;
+	font-family: 'Lato';
+	font-weight: 300;
+	display: inline-block;
+}
+nav ul li:hover{
+	color: #2C3E50;
+	border-bottom-color: #2C3E50;
+}
+nav ul li a{
+	color: inherit;
+	text-decoration: none;
+}

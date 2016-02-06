@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home | Prannay Khosla</title>
+	<link rel="stylesheet" type="text/css" href="style/style_main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		var i;
+		function call(){
+			if(i > 0){
+				i--;
+				setTimeout(call,300);
+				$('spanner').css('opacity',0);
+			}
+			else {
+				i++;
+				setTimeout(call,300);
+				$('spanner').css('opacity',1);
+			}
+		}
+		$(function(){
+			i = 0;
+			call(i);
+		})
+	</script>
+</head>
+<body>
+	<div class="paging1">
+		<header class="page1">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<!-- <li><a href="#">Blog</a></li> -->
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="big-image">
+			<img src="images/big.png">
+			<!-- <div id="programmer">// <span>Lorem ipsum dolor</span></div> -->
+		</div>
+		<div class="container">
+			<div class="row first-row">
+				<div id="title-img"><img src="images/self.png"></div>
+				<div id="title">Prannay <span>Khosla</span><spanner>|</spanner></div>
+			</div>
+			<div class="row my-stuff">
+				<p>Hi, I am a web <span class="hash">#</span><span class="hashtag">developer</span> and <span class="hash">#</span><span class="hashtag">designer</span>. I also work in <span class="tag">Haskell</span> like anyone with a knack for interesting stuff. My primary interests are <span class="tag">backend optimization</span>, <span class="tag">Machine Learning</span> and <span class="tag">Artificial Intelligence</span>. I also am a hard core fan of <span class="tag">Metal</span> and <span class="tag">Classic Rock</span>.
+			</div>
+			<div class="row my-stuff">
+				<div id="idea">
+				Have an <span class="tag-alt">out of the box</span> idea? 
+				<span><a href="#" class="mystuff-links">Work with me</a></span><br>
+				or just scan throught my <a href="#" class="mystuff-links">previous work</a>
+				and choose to <span class="tag-alt">work with me</a>.
+				</div>
+			</div>
+			<div class="row social row-social">
+				<ul class="social-icons">
+					<li><a href="http://github.com/prannayk"><img src="images/github.png"></a></li>
+					<li><a href="http://facebook.com/prannay.khosla"><img src="images/fb.png"></a></li>
+					<li><a href="https://www.linkedin.com/in/prannayk"><img src="images/linkin.png"></a></li>
+					<li><a href="http://twitter.com/PrannayKhosla"><img src="images/twit.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
