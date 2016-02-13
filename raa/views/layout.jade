@@ -1,0 +1,23 @@
+include mixins
+
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap/dist/css/bootstrap.css')
+		script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+		script(src='/stylesheets/bootstrap/dist/js/bootstrap.js')
+		link(href='https://fonts.googleapis.com/css?family=Roboto:400,100,900italic,900|Roboto+Condensed:400,700,300',rel='stylesheet')
+	body
+		+nav("Rashtriya Avishkar Abhiyan", "dropdown_menu","fixed-top")
+			+nav_item_dropdown( "#" )( label="Meeting Reports")
+					+nav_item( "#" ) Meeting 1
+					+nav_item( "#" ) Meeting 2
+					+nav_divider
+					+nav_header Next Meeting
+					+nav_item( "#" ) On-going Work
+			+nav_item( "about.html" ) About
+			+nav_item( "contact.html" ) Contact Us
+		br
+		block content

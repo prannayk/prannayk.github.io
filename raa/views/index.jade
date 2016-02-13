@@ -1,0 +1,46 @@
+extends layout
+
+block content
+	.row
+		.col-md-12
+			.carousel.slide(data-ride="carousel", id="mine")
+				ol.carousel-indicators
+					li(data-target="#mine",data-slide-to="0")
+					li(data-target="#mine",data-slide-to="1")
+					li(data-target="#mine",data-slide-to="2")
+				.carousel-inner(role="listbox")
+					.item.active
+						img(src="images/header.jpg")
+					.item
+						img(src="images/header02.jpg")
+					.item
+						img(src="images/header01.jpg")
+				a.left.carousel-control(href="#mine",role="button",data-slide="prev")
+					span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+					span.sr-only Previous
+				a.right.carousel-control(href="#mine",role="button",data-slide="next")
+					span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+					span.sr-only Next
+	.jumbotron
+		.row
+			.col-md-2
+				img(src="images/logo.png")
+			.col-md-8
+				h2 Rashtriya Avishkar Abhiyan
+				h3 Indian Institute of Technology, Kanpur
+				p Rashtriya Avishkar Abhiyan (RAA) was setup in under the Ministry of Human Resource Development (mHRD) in July 2015 in order to increase the students' interest in Mathematics and Sciences while at the same time relating the school curriculm to practical applications outside the Classroom. It is also aimed to nurturing talent and scientific bent of mind while at the same time helping enthusiastic students to reach heights of academic excellence and research.
+			.col-md-2
+				img(src="images/mhrd.jpg")
+	.row
+		.col-md-4.col-sm-6.col-xs-12
+			+panel("Successful Intervention","success")
+				p The campus faculty and students provide extra support to the schools inside the campus with voluntary teaching in school and further extra coaching availability during evenings under various programs.
+				p The students have researched into problems faced by students in the vicinity rural areas as well tried to solve them personally. 
+		.col-md-4.col-sm-6.col-xs-12
+			+panel("On-going work","warning")
+				p The institute is working on Hindi Translations of most well known works in order to make them available to a even larger population. 
+				p The institute holds regular meetings with teachers from all nearby areas and discusses with them the problems they are facing. After further discussion between the faculty the institute is working on developing solutions for both the teachers and students.
+				p The faculty is also making reccomendations like setting up science corners and providing logistic background to teachers to achieve this. 
+				p The faculty is also working on helping the teachers to create demonstrations while also showing them interesting experiments in hope that this would further reflect in the teachers' classrooms. 
+		.col-md-4.col-sm-6.col-xs-12
+			+panel("Aims and Aspiration","primary") On a small scale we aim at providing quality education to each child and ample resources to all schools we can reach out to from our campus. Further we would like to ensure that every student with an able mind and scientific bent of mind is provided the right environment which enable him to reach his true potential.
