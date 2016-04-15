@@ -95,10 +95,14 @@ project .postscript {
 	display: block;
 	width: 100%;
 	color: #fff;
-	background: red;
+	background: green;
 	font-style: 300;
 	padding: 2px 0 3px 10px;
 	font-family: 'Roboto Condensed';
+	/*font-style: italic;*/
+}
+project .ongoing {
+	background: red;
 	font-style: italic;
 }
 project a {
