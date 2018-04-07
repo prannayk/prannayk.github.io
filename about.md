@@ -7,7 +7,7 @@ tags: about
 
 If you are looking for specifics, see my [CV](/files/cv.pdf)
 
-## Who am I
+## Who am I?
 I am a senior undergraduate student at the Indian Institute of Technology, Kanpur. I completed my schooling from the [Delhi Public School, R.K. Puram](http://dpsrkp.net/), and went on to pursue a degree in Computer Science and Engineering. But I have since then been converted to deep enthusiast of mathematics, the deeper intricacies of Algebra, Number Theory, Dynamics, Randomness and Information Theory. I have been interested in Game Theory for a long time now, but have been only so good at till this point.
 
 ## What are my interests

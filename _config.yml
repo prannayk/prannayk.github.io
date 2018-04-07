@@ -4,11 +4,13 @@ email:       prannay.khosla@gmail.com
 author:      John Otander, Prannay Khosla
 description: "Homepage of IIT Kanpur"
 baseurl:     ""
-url:         "http://prannayk.github.io"
+rollurl:     "/"
+url:         "13.127.158.59"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
  - contact.html
+ - projects.md
 
 # Google services
 google_verification:
@@ -33,7 +35,7 @@ post_preview_image: false
 
 # Facebook Page integration
 # (for instant articles and other stuff)
-fb_page: true
+fb_page: false
 fb_page_id: khosla137
 
 # Disqus post comments
@@ -53,7 +55,7 @@ facebook_comments_number: 10
 # Social icons
 github_username: prannayk
 reddit_username: prannayk
-bitbucket_username:
+bitbucket_username: prannayk
 stackoverflow_id:
 twitter_username: prannaykhosla
 skype_username: prannay.khosla
